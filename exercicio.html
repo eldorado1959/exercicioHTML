@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Rogério F Machado</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0 20px;
+      background-color: #f4f4f4;
+    }
+
+    .introducao {
+      background-image: linear-gradient(to right, #e0f2f1, #b2dfdb);
+      padding: 20px;
+    }
+
+    .introducao h1 {
+      margin: 0;
+    }
+
+    .introducao p span {
+      font-weight: bold;
+      color: #00796b;
+    }
+
+    .habilidades {
+      padding: 20px;
+    }
+
+    .habilidades ul {
+      list-style-type: square;
+    }
+
+    .habilidades li span {
+      font-weight: bold;
+    }
+
+    .projetos {
+      padding: 20px;
+    }
+
+    .projeto {
+      border: 2px solid #90caf9;
+      padding: 15px;
+      margin-bottom: 15px;
+      background-color: #e3f2fd;
+    }
+
+    .contato {
+      padding: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      margin-top: 15px;
+      background-color: #00796b;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #004d40;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Seção: Introdução -->
+  <div class="introducao">
+    <h1>ROGERIO F MACHADO</h1>
+    <p>Tenho 53 anos, trabalho em uma empresa de ferragens e sou <span>programador COBOL</span>.</p>
+  </div>
+
+  <!-- Seção: Habilidades -->
+  <div class="habilidades">
+    <h2>Habilidades</h2>
+    <ul>
+      <li><span style="color: darkblue;">Piloto de corrida</span></li>
+      <li><span style="color: darkgreen;">Programador</span></li>
+      <li>Nadador</li>
+      <li>Diretor de empresa</li>
+    </ul>
+  </div>
+
+  <!-- Seção: Projetos -->
+  <div class="projetos">
+    <h2>Projetos</h2>
+
+    <div class="projeto">
+      <h3>E-commerce de Varejo</h3>
+      <p>Sistema para vendas online com foco em produtos físicos e gestão de estoque.</p>
+      <a href="#">Ver Projeto</a>
+    </div>
+
+    <div class="projeto">
+      <h3>Internet Banking</h3>
+      <p>Aplicação voltada para transações bancárias seguras e gerenciamento de contas.</p>
+      <a href="#">Ver Projeto</a>
+    </div>
+  </div>
+
+  <!-- Seção: Formulário de Contato -->
+  <div class="contato">
+    <h2>Formulário de Contato</h2>
+    <form>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+      <label for="conheceu">Como nos conheceu?</label>
+      <select id="conheceu" name="conheceu">
+        <option value="google">Google</option>
+        <option value="amigo">Indicação de amigo</option>
+        <option value="rede_social">Redes sociais</option>
+      </select>
+
+      <input type="submit" value="Enviar">
+    </form>
+  </div>
+
+</body>
+</html>
