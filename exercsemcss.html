@@ -1,0 +1,98 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rogério F Machado</title>
+</head>
+<body>
+
+  <!-- Seção: Introdução -->
+  <div>
+    <h1>ROGERIO F MACHADO</h1>
+    <p>Tenho 53 anos, sócio proprietário da Ferragem Eldorado e sou <strong>programador COBOL</strong>.</p>
+  </div>
+
+  <!-- Seção: Habilidades -->
+  <div>
+    <h2>Habilidades</h2>
+    <ul>
+      <li><strong>Piloto de corrida</strong></li>
+      <li><strong>Programador</strong></li>
+      <li>Nadador</li>
+      <li>Diretor de empresa</li>
+    </ul>
+  </div>
+
+  <!-- Seção: Projetos -->
+  <div>
+    <h2>Projetos</h2>
+
+    <div>
+      <h3>E-commerce de Varejo</h3>
+      <p>Sistema para vendas online com foco em produtos físicos e gestão de estoque.</p>
+      <a href="https://google.com" target="_blank">
+        <button>Ver Projeto</button>
+      </a>
+    </div>
+
+    <div>
+      <h3>Internet Banking</h3>
+      <p>Aplicação voltada para transações bancárias seguras e gerenciamento de contas.</p>
+      <a href="https://banrisul.com.br" target="_blank">
+        <button>Ver Projeto</button>
+      </a>
+    </div>
+  </div>
+
+  <!-- Seção: Formulário de Contato -->
+  <div>
+    <h2>Formulário de Contato</h2>
+    <form>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+      <label for="conheceu">Como nos conheceu?</label>
+      <select id="conheceu" name="conheceu">
+        <option value="google">Google</option>
+        <option value="amigo">Indicação de amigo</option>
+        <option value="rede_social">Redes sociais</option>
+      </select>
+
+      <input type="submit" value="Enviar">
+
+      <div id="mensagem-enviada"></div>
+
+      <script>
+        const form = document.querySelector('form');
+        const msgBox = document.getElementById('mensagem-enviada');
+
+        form.addEventListener('submit', function(event) {
+          event.preventDefault(); // Evita envio real
+
+          const nome = document.getElementById('nome').value;
+
+          msgBox.textContent = `Mensagem enviada com sucesso por ${nome}.`;
+
+          // Limpar formulário
+          form.reset();
+
+          // Ocultar mensagem após 10 segundos
+          setTimeout(() => {
+            msgBox.textContent = '';
+          }, 10000);
+        });
+      </script>
+    </form>
+  </div>
+
+</body>
+</html>
